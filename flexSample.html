@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Demo FlexBox 3</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: rgb(102, 4, 4);
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            align-content: center;
+        }
+
+        .mianContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+            text-align: center;
+        }
+
+        .sideBarRightItem {
+            background: rgb(7, 100, 80);
+            text-align: center;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid rgb(153, 211, 153);
+
+        }
+
+        .mianContentItem {
+            flex: 3 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .mianContentItem {
+            order: 2;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER - Sample FlexBox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mianContentItem">
+            <article>
+                <h2>First article</h2>
+                <p>This is first article:-
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </p>
+            </article>
+            <article>
+                <h2>Second ariticle</h2>
+                <p>Standard recommendations to prevent infection spread include regular hand washing, covering mouth and
+                    nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone
+                    showing symptoms of respiratory illness such as coughing and sneezing.</p>
+            </article>
+            <article>
+                <h3>Third article</h3>
+                <p>Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed
+                    investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from
+                    dromedary camels to humans. Several known coronaviruses are circulating in animals that have not yet
+                    infected humans.</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sideBarLeftItem">
+            <div class="center">
+                <p>Left Side Bar</p>
+            </div>
+        </sidebar>
+        <sidebar class="sideBarItem sideBarRightItem">
+            <div class="center">
+                <p>Right Side Bar</p>
+            </div>
+        </sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
